@@ -78,9 +78,7 @@
     background-size:cover;
     background-repeat: no-repeat;
   }
-  .Slogan h2{
-    
-  }
+ 
   
 
   @media screen and (max-width:700px) {
@@ -101,19 +99,17 @@
     color:white;
     font-size:60px;
     font-family:Raleway;
-    /* width:200px; */
     text-transform: uppercase;
-    /* border: 5px double rgb(245, 245, 245); */
-
+  
     
   }
-.Quotes button{
+.Quotes a{
   width:150px;
   background-color: transparent;
   color: white;
   margin-left:80px;
 }
-.Quotes button:hover{
+.Quotes a:hover{
   background-color: rgb(250, 72, 63);
  
 
@@ -153,20 +149,18 @@
   .why_us{
     width:100%;
     height:auto;
-    /* background-color: #111; */
-    color:var(--main-bg-color);
-    /* background-color: rgb(35, 35, 37); */
+   background-color: rgb(246,246,244);
+   color:var(--main-bg-color);
     padding-bottom: 60px;
     
   }
   .why_us h2{
-    color: rgb(255, 24, 24);
+    color:rgb(250, 72, 63);
     text-align: center;
     font-family:Raleway;
     font-size:15px;
   }
   .why_us h4{
-    /* color:whitesmoke; */
     color:var(--text-color);
     text-align: center;
     font-family:Raleway;
@@ -178,24 +172,28 @@
   .details{
     justify-content: space-around;
     padding-bottom: 30px;
-    /* display: flex; */
+   
   }
   .details .card{
     margin-top: 20px;
-    /* background-color: rgb(35, 35, 37); */
-    /* background-color: #111; */
     color:var(--main-bg-color);
-    /* box-shadow: 3px 3px 9px rgb(225, 225, 225);  */
     border-color:rgb(19, 19, 19);
-    
     color:var(--text-color);
+   box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+
    
   }
 
   .details .card:hover{
     box-shadow: none;
-    border-color: white;
+    border-color: rgb(19, 18, 18);
+    background-color: rgb(250, 72, 63);
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,2);
+   
 
+  }
+  .details .card:hover .circle{
+    background-color: white;
   }
   .circle{
     width:80px;
@@ -204,12 +202,15 @@
     background-color: rgb(253, 63, 63);
     margin-left:90px;
   }
+  .circle:hover{
+    background-color: white;
+  }
   .details .card img{
     width:50px;
     height:50px;
     margin: auto;
     color: rgb(253, 63, 63);
-    /* position: relative; */
+    
    
   }
   .card h5{
@@ -220,15 +221,12 @@
   }
   
 
-/* <><><><><><><><><><><><><><><><><><><><> */
 .Offer_section{
   width: 100%;
   height:auto;
-  /* background-color: rgb(35, 35, 37); */
-  /* background-color: #111; */
-  color:var(--main-bg-color);
-  color:var(--text-color);
-  /* color: white; */
+  background-color: rgb(209, 209, 209);
+   
+ 
 }
   .Offers{
     display:flex;
@@ -240,8 +238,6 @@
   .offers_details{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* background-color: #111; */
-    /* color: white; */
     color:var(--main-bg-color);
     color:var(--text-color);
   
@@ -252,8 +248,6 @@
      border-radius: 8px;
      overflow: hidden;
      text-align: center;
-    /* background-color: #111;
-    color: white; */
     color:var(--main-bg-color);
     color:var(--text-color);
    }
@@ -297,35 +291,25 @@
     }
 }
    @media (max-width: 420px) {
+   
     .offers_details {
         grid-template-columns: repeat(2, 1fr);
+        height: auto;
     }
     .offers_details .card{
-      width: 180px;
+      width: 160px;
       height:250px;
+      
     }
     .offers_details .card img{
-      width: 180px;
+      width: auto;
       height:150px;
     }
     .offers_details .card h5{
      font-size: 15px;
     }
 }
-   @media (max-width: 420px) {
-    
-    .offers_details .card{
-      width: 150px;
-      height:200px;
-    }
-    .offers_details .card img{
-      width: 150px;
-      height:120px;
-    }
-    .offers_details .card h5{
-     font-size: 15px;
-    }
-}
+
 
 @media (max-width: 320px) {
     .offers_details {
@@ -337,69 +321,68 @@
     }
 }
 
-    /*<><><><><><><><><><><><><><><><>  */
+    
+  #Register{
+  display: flex;
+  justify-content: center;
+  align-items:center;
 
+
+ }
+  .register_tab{
+     background-image: url(Photos/copy.jpg);
+     background-size: cover;
+     height:auto;
+     width:90%;
+     background-repeat: no-repeat;
+     text-align: center;
+    
+  }
+  .register{
+    margin:130px;
+  }
   
-    .register_tab{
-      width: 100%;
-      height:auto;
-      /* background-color: rgb(35, 35, 37); */
-    /* background-color: #111; */
-    color:var(--main-bg-color);
-    
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    
+  @media (max-width:450px) {
+   .register_tab{
+    background-image: url(Photos/pexels-niragire-tresor-173186640-11266969.jpg);
 
-    }
-    .register{
-      width: 90%;
-      height:500px;
-      background-image:url(Photos/copy.jpg);
-      background-size:contain;
-      background-repeat: no-repeat;
-      /* background-attachment: fixed; */
-    }
-    .register h2{
-      /* color: white; */
-      text-align: center;
-      padding-top:200px ;
+   }
+   .register{
+    margin: 0%;
+   }
+   .register h2{
+    font-size: 25px;
+    text-align:center;
+    margin-top: 100px;
+    
+  }
+  .register p{
+    text-align:center;
+    font-size:18px;
   
-    color:var(--text-color);
-    }
-    .register p{
-      /* color: white; */
-      text-align: center;
+  }
+  .text-center button{
+    margin-bottom:100px;
+  }
     
-    color:var(--text-color);
-    }
-
-
-
-    .section_4{
+}
+.section_4{
       width: 100%;
       height: auto;
       color: bisque;
-      /* background-color: rgb(35, 35, 37); */
-    /* background-color: #111; */
-    color:var(--main-bg-color);
-    
+      background-color: rgb(209, 209, 209);
 
-    }
+  }
     .Training_Sec{
      display: grid;
     }
     .section_4 h2{
-      /* color:white; */
       text-align: center;
-    color:var(--text-color);
+      color:var(--text-color);
     }
     .Training{
       margin-bottom: 50px;
-      /* background-color:rgb(35, 35, 37); */
-    /* background-color: #111; */
-    color:var(--main-bg-color);
+      color:var(--main-bg-color);
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       place-self:center;
@@ -408,13 +391,21 @@
      .personal_training{
       width:auto;
       height:auto;
-     }
+      box-shadow: 5px 5px 5px 0px rgba(0,0,0,2);
+      border-radius: 20px;
+    }
+    .personal_training:hover{
+      box-shadow: none;
+    }
+
 
      .personal_training .card{
       width:400px;
       height:auto;
-      /* background-color: #f1f1f1; */
       color:var(--main-bg-color);
+      border-radius: 20px;
+  
+      
     
      }
      .personal_training .card img{
@@ -426,6 +417,12 @@
      .Group_training{
       width:auto;
       height: auto;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px 0px rgba(0,0,0,2);
+
+     }
+     .Group_training:hover{
+      box-shadow: none;
      }
 
 
@@ -433,6 +430,7 @@
       width:400px;
       height:auto;
       color:var(--main-bg-color);
+
    
      }
      .Group_training .card img{
@@ -463,10 +461,7 @@
      .online{
       width: 100%;
       height:350px;
-      /* background-color: rgb(109, 109, 206); */
-      /* background-color: #111; */
       color:var(--main-bg-color);
-    
       background-image: url(Photos/pexels-823sl-2294361.jpg);
       background-size:cover;
       background-repeat: no-repeat;
@@ -477,38 +472,21 @@
     
 
     }
-    /* .Online_training{
-      /* width:100%;
-      height:350px; */
-      /* background-image: url(Photos/pexels-823sl-2294361.jpg);
-      background-size:cover;
-      background-repeat: no-repeat; */
-      /* -webkit-filter: brightness(1);
-      filter: brightness(1);
-     
 
-    } */
     .Online_training h2{
-      /* color: white; */
       text-align: center;
-      /* padding-top:200px ; */
-      
-    color:var(--text-color);
+      color:var(--text-color);
     }
     .Online_training p{
-      /* color: white; */
-      text-align: center;
-      
-    color:var(--text-color);
+       text-align: center;
+       color:var(--text-color);
     }
 
     .text-center .btn{
       background-color:transparent;
-      /* border-color:rgb(250, 72, 63); */
       border-radius: 25px solid;
       border:2px solid rgb(250, 72, 63);
-      /* color: rgb(214, 214, 214); */
-    color:var(--text-color);
+      color:var(--text-color);
       width:200px;
     }
     .text-center .btn:hover{
@@ -531,17 +509,12 @@
    align-items: center;
    text-align: center;
    padding: 0px 40px 0 40px;
-   /* background-color: rgb(35, 35, 37); */
-   /* background-color: #111; */
-   color:var(--main-bg-color);
+   background-color: rgb(209, 209, 209);
+  
     
  }
 
   .heading{
-   /* background-color: rgb(35, 35, 37); */
-   /* background-color: #111;
-
-   color: white; */
    color:var(--main-bg-color);
     color:var(--text-color);
   } 
@@ -574,11 +547,9 @@
  }
 
 .section_6{
-  /* background-color: rgb(35, 35, 37); */
-  /* background-color: #111; */
-  color:var(--main-bg-color);
+  background-color: rgb(241, 241, 241);
+  
    
-
 }
  .pricing_list{
   display:grid;
@@ -598,18 +569,15 @@
  }
  
  .pricing_list .card {
-   /* text-align:center; */
    place-self:center;
    margin-top: 20px;
    width:20rem;
-   /* background-color: rgb(35, 35, 37); */
-   /* background-color: #111; */
-   color:var(--main-bg-color);
+   background-color: rgb(247, 243, 243);
   
 
  }
  .pricing_list .card:hover {
-  box-shadow: 3px 3px 9px rgb(209, 209, 209); 
+  box-shadow: 3px 3px 9px rgb(58, 58, 58); 
     
  }
 
@@ -636,29 +604,14 @@
  }
 
 
- @media screen and (max-width:980px){
-  /* .pricing_list{
-    /* grid-template-columns:repeat(2 ,1fr); 
-  }
- }
- @media screen and (max-width:650px){
-  .pricing_list{
-    /* grid-template-columns:repeat(1 ,1fr); */
-  }
-  /* .pricing_list .card{
-    width:15rem;
-    height:500px;
-  } 
- }*/
+
 
 
  .section_7{
   width: auto;
   height:auto;
-  /* background-color:rgb(35, 35, 37); */
+  background-color:rgb(35, 35, 37);
   /* background-color: #111; */
-  color:var(--main-bg-color);
-  
   padding-bottom: 30px
  }
  .img_sec{
@@ -680,9 +633,9 @@
  .social_media a {
   font-size: 30px;
   margin:20px;
-  /* color: white; */
+  color: white;
   
-    color:var(--text-color);
+    
  }
  .social_media a:hover{
   color: rgb(253, 63, 63);
@@ -694,8 +647,7 @@
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
-  /* color: white; */
-    color:var(--text-color);
+  color: rgb(253, 63, 63);
 
  }
  .one .contact{
@@ -714,8 +666,7 @@
  }
  .quick_links a{
   text-decoration: none;
-  /* color: white; */
-    color:var(--text-color);
+  color: white;
  }
  .quick_links a:hover{
  color: rgb(253, 63, 63);
